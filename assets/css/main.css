@@ -902,6 +902,11 @@ ol {
 .pb-225 {
   padding-bottom: 225px;
 }
+.z--1 {
+  z-index: -10;
+}
+
+
 
 .img-bg {
   background-position: center center;
@@ -2081,6 +2086,12 @@ ol {
   position: relative;
   background-color: #fff;
   padding: 170px 0 100px 0;
+  min-height: 100vh;
+  z-index: -5;
+}
+.hero-bg {
+  background-image: url("../svg/curvegb.svg");
+  background-position: center bottom;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2103,12 +2114,12 @@ ol {
   background: #3080E3;
   position: absolute;
   border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-area .main__circle {
-    display: none;
+    left: 50%;
   }
 }
 
@@ -2123,11 +2134,11 @@ ol {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-area .main__circle2 {
     display: none;
   }
-}
+} */
 
 .hero-area .main__circle3 {
   top: -180px;
@@ -2141,7 +2152,8 @@ ol {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .hero-area .main__circle3 {
-    display: none;
+    left: -230px;
+    top: -230px;
   }
 }
 
@@ -2910,12 +2922,13 @@ ol {
 }
 
 .single-service {
-  padding: 0 35px 35px;
+  padding: 2rem;
   border-radius: 18px;
   -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
           box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.048);
   background-color: #fff;
   margin-top: 30px;
+  /* min-height: 370px; */
 }
 
 .single-service .service-icon {
@@ -3161,4 +3174,7 @@ ol {
 .footer .newsletter-form .button .sub-btn:hover {
   color: #fff;
   background-color: #fd723b;
+}
+.primary {
+  color: #3080E3;
 }
