@@ -2150,10 +2150,17 @@ ol {
   border-radius: 50%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (max-width: 480px) {
   .hero-area .main__circle3 {
     left: -230px;
     top: -230px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .hero-area .main__circle3 {
+    top: -150px;
+    left: -150px
   }
 }
 
