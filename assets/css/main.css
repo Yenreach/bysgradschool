@@ -1201,6 +1201,11 @@ ol {
   border-radius: 5px;
 }
 
+.scroll-bottom {
+  position: absolute;
+  bottom: 20%;
+  left: 30px;
+}
 .scroll-top:hover {
   -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
   box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
@@ -2088,15 +2093,24 @@ ol {
   position: relative;
   background-color: #fff;
   padding: 170px 0 100px 0;
-  min-height: 100vh;
+  min-height: 60vh;
   z-index: -5;
   overflow-x: hidden;
 }
 .hero-bg {
   background-image: url("../svg/curvegb.svg");
-  background-position: center bottom;
+  /* background-position: center bottom; */
+  /* background-size: cover; */
 }
-
+@media only screen and (min-width: 768px) {
+  .hero-bg {
+    background-position: center bottom;
+    background-size: cover;
+  }
+  .hero-area {
+    min-height: 80vh;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area {
     padding: 130px 0 70px 0;
@@ -2113,11 +2127,17 @@ ol {
   position: absolute;
   top: -98px;
   right: calc(50% - 1180px);
-  width: 1000px;
-  height: 1000px;
+  width: 600px;
+  height: 600px;
   background: #3080E3;
   border-radius: 50%;
   z-index: -1;
+}
+@media only screen and (min-width: 600px) {
+  .hero-area .main__circle {
+    width: 1000px;
+    height: 1000px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
