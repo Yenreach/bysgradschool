@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-   
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body>
@@ -159,10 +160,13 @@
                             Conduct examinations in the profession and award certificates or diplomas to successful candidates as appropriate.
                         </li>
                     </ul>
-                    <!-- <p class="mt-25 mb-35">
-                        CTA
-                        Fill the short application below to book a FREE 15 minutes consultation call with our client consultant.
-                    </p> -->
+                    <p class="px-2 pt-1 pb-1 text-center text-white mt-25 mb-25 bg-danger" onclick="calenderly()">
+                        Click on the button below to book a FREE 15 minutes consultation call with our client consultant.
+                    </p>
+                    <div class="text-center mt-25 mb-45">
+                        <button class="btn btn-primary" onclick="calenderly()">Book a FREE Appointment</button>
+                    </div>
+                          
                     <h6 class="mb-15 mt-35">Institute Of Strategic Management (ISMN)</h6>
                     <p class="mb-25">
                         The Institute of Strategic Management, Nigeria is a professional management association,   which specializes in Strategic Management, Leadership, and Governance. Founded in 2003, the Institute is a non-government, non-profit, independent professional organization. We currently have over 25,000 members in Nigeria and Abroad..
@@ -194,10 +198,13 @@
                     <p class="mt-25 mb-25">
                         The National Secretariat administration is headed by the Registrar/CEO. The current Registrar/CEO is Mr. Obitunde Obiyemi, FSM.
                     </p>
-                    <!-- <p  class="mt-25 mb-35"">
-                        CTA
-                        Fill the short application below to book a FREE 15 minutes consultation call with our client consultant.
-                    </p> -->
+                    <p class="px-2 pt-1 pb-1 text-center text-white mt-25 mb-25 bg-danger" onclick="calenderly()">
+                        Click on the button below to book a FREE 15 minutes consultation call with our client consultant.
+                    </p>
+                    <div class="text-center mt-25 mb-45">
+                        <button class="btn btn-primary" onclick="calenderly()">Book a FREE Appointment</button>
+                    </div>
+                          
                     <h6 class="mb-15">Chartered Institute Of Customer Relationship Management (CICRM)</h6>
                     <p class="mb-25">
                         CICRM is the global leader in designing, developing and promoting international best practices in Customer Relationship Management. Hence our vision of promoting excellence in customer relationships.
@@ -218,10 +225,13 @@
                     <p class="mt-25 mb-25">
                         The Institute of Chartered Economists of Nigeria (I.C.E.N) was established by the Companies and Allied Matters Act, 1990, had the pioneering statutory rights to regulate the practice of Economics in Nigeria and still has these rights today.
                     </p>
-                    <!-- <p  class="mt-25 mb-35">
-                        CTA
-                        Fill the short application below to book a FREE 15 minutes consultation call with our client consultant.
-                    </p> -->
+                    <p class="px-2 pt-1 pb-1 text-center text-white mt-25 mb-25 bg-danger" onclick="calenderly()">
+                        Click on the button below to book a FREE 15 minutes consultation call with our client consultant.
+                    </p>
+                    <div class="text-center mt-25 mb-45">
+                        <button class="btn btn-primary" onclick="calenderly()">Book a FREE Appointment</button>
+                    </div>
+                          
                     <h6 class="mb-15">Institute Of Chartered Economists Of Nigeria (ICEN)</h6>
                     <p class="mb-25">
                         Until the most recent past, it was absolutely difficult for economists to identify themselves with any professional body because of the non-existence of an organized and independent professional body to regulate the conduct and activities of the profession.
@@ -245,11 +255,18 @@
                         Why Becoming a Professional Economist?
                         There is no gainsaying the fact that education is fast becoming an essential commodity that everyone is aspiring to have. High unemployment rate coupled with severe economic crunch often necessitate people at the middle cadre to seek an alternative means of training themselves to acquire more skills while still retaining their jobs. The Institute therefore, serves as a viable option for such a category of people because of its capacity to provide them with their professional training needs and at the same time guaranteeing them job security in their workplaces.
                     </p>
-                    <!-- <p class="mt-25 mb-35">
-                        CTA
-                        Fill the short application below to book a FREE 15 minutes consultation call with our client consultant.
+                    <p class="px-2 pt-1 pb-1 text-center text-white mt-25 mb-25 bg-danger" onclick="calenderly()">
+                        Click on the button below to book a FREE 15 minutes consultation call with our client consultant.
                     </p>
-                           -->
+                    <div class="text-center mt-25 mb-45">
+                        <button class="btn btn-primary" onclick="calenderly()">Book a FREE Appointment</button>
+                    </div>
+                          
+
+
+
+
+
                     <h3 class="mb-20 text-center">Digital Skills</h3>
                     <h6 class="">Data Analysis Training</h6>
                     <p class="mt-15 mb-25">
@@ -351,7 +368,14 @@
     </a>
   
 
+        <!-- Calendly inline widget begin -->
+<!-- <div class="calendly-inline-widget" data-url="https://calendly.com/nicholasduadei7/30min" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+<!-- Calendly inline widget end -->
 
+<!-- Calendly badge widget begin -->
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<!-- Calendly badge widget end -->
     <!-- ========================= JS here ========================= -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
@@ -359,7 +383,12 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
     <script>
+        Calendly.initBadgeWidget({ url: 'https://calendly.com/nicholasduadei7/30min', text: 'Schedule Appo', color: '#0069ff', textColor: '#ffffff', branding: true }); 
+        function calenderly() {
+            Calendly.initPopupWidget({url: 'https://calendly.com/nicholasduadei7/30min'});return false;
+        }
         //========= testimonial 
         tns({
             container: '.testimonial-slider',
