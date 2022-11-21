@@ -32,6 +32,9 @@ Index Of css
 html {
   scroll-behavior: smooth;
 }
+* {
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -2107,12 +2110,12 @@ ol {
 }
 
 .hero-area .main__circle {
+  position: absolute;
   top: -98px;
   right: calc(50% - 1180px);
   width: 1000px;
   height: 1000px;
   background: #3080E3;
-  position: absolute;
   border-radius: 50%;
   z-index: -1;
 }
