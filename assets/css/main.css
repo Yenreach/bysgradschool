@@ -2096,6 +2096,7 @@ ol {
   min-height: 60vh;
   z-index: -5;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .hero-bg {
   background-image: url("../svg/curvegb.svg");
