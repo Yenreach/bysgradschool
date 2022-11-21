@@ -32,9 +32,6 @@ Index Of css
 html {
   scroll-behavior: smooth;
 }
-* {
-  overflow-x: hidden;
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -1472,6 +1469,7 @@ ol {
   width: 100%;
   left: 0;
   top: 0;
+  overflow-x: visible;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1498,6 +1496,7 @@ ol {
     overflow-y: scroll;
     border-top: 1px solid #eee;
     border-radius: 8px;
+    overflow-x: visible;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
     color: #3080E3 !important;
@@ -2091,6 +2090,7 @@ ol {
   padding: 170px 0 100px 0;
   min-height: 100vh;
   z-index: -5;
+  overflow-x: hidden;
 }
 .hero-bg {
   background-image: url("../svg/curvegb.svg");
