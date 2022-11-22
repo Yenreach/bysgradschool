@@ -54,11 +54,6 @@ p {
   line-height: 24px;
 }
 
-ul {
-  margin-left: 2rem;
-}
-
-
 .navbar-toggler:focus,
 a:focus,
 input:focus,
@@ -181,12 +176,6 @@ h6 {
   font-size: 16px;
 }
 
-/* ul,
-ol {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
-} */
 
 .mt-5 {
   margin-top: 5px;
@@ -1840,7 +1829,7 @@ ol {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   position: relative;
-  padding: 35px 0;
+  padding: 19px 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3037,6 +3026,12 @@ ol {
   background-color: #F4F7FA;
   color: #727272;
   position: relative;
+}
+footer ul,
+footer ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
