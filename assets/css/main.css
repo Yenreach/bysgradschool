@@ -33,6 +33,11 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
@@ -49,10 +54,10 @@ p {
   line-height: 24px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+ul {
+  margin-left: 2rem;
 }
+
 
 .navbar-toggler:focus,
 a:focus,
@@ -176,12 +181,12 @@ h6 {
   font-size: 16px;
 }
 
-ul,
+/* ul,
 ol {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-}
+} */
 
 .mt-5 {
   margin-top: 5px;
