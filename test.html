@@ -10,13 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
 
     <!-- ========================= CSS here ========================= -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                             <!-- Start Navbar -->
                             <nav class="navbar navbar-expand-lg">
                                 <a class="navbar-brand" href="index.html">
-                                    BYS
+                                    <h3 class="text-white">BYS</h3>
                                     <!-- <img src="assets/images/logo/logo.svg" alt="Logo"> -->
                                 </a>
                                 <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
@@ -60,14 +61,10 @@
                                 <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                     <ul id="nav" class="navbar-nav ms-auto">
                                         <li class="nav-item">
-                                            <a class="dd-menu active collapsed" href="index.html" data-bs-toggle="collapse"
-                                                data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
-                                                aria-expanded="false" aria-label="Toggle navigation">Home</a>
+                                            <a href="index.html" aria-label="Toggle navigation">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                                data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
-                                                aria-expanded="false" aria-label="Toggle navigation">About</a>
+                                            <a href="about.html" aria-label="Toggle navigation"> About</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="contact.html" aria-label="Toggle navigation">Contact</a>
@@ -102,18 +99,19 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="hero-content">
-                        <p>If Education and Wealth Creation Means Anything To You, Then</p>
+                        <span class="fs-6">If Education and Wealth Creation Means Anything To You, Then</span>
+                        <br><br>
                         <h1>BYS Graduate School</h1>
                         <p>Is Everything To You</p>
                         <div class="button">
-                            <a href="contact.html" class="btn ">Learn More</a>
+                            <a href="service.html" class="btn z-100">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 col-12">
                     <div class="app-image">
-                        <div class="image-bg-shape"></div>
-                        <img src="assets/images/hero/app.svg" alt="#">
+                        <!-- <div class="image-bg-shape"></div> -->
+                        <img src="assets/svg/hero.svg" alt="#" style="width: 100%; max-height: 408px; object-fit: cover; border-radius: 7%;">
                     </div>
                 </div>
             </div>
@@ -131,16 +129,17 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center gap-12">
-                <img src="./assets/images/hero/app.svg" alt="" class="object-cover w-96 flex-1">
-                <p class="flex-1">Which is why at BYS Graduate School, we offer budding professionals, entrepreneurs and growth driven individuals the opportunity to empower themselves through the acquisition of relevant professional certification programs and 21st Century skill sets all aimed at helping you achieve 3 outstanding results.
+            <div class="row">
+                <img src="./assets/svg/who.svg" data-wow-delay=".2s" alt="" class="flex-1 mb-5 wow fadeInUp mb-md-0 col-md-6" style="max-height: 338px; object-fit: cover; border-radius: 7%;">
+                <p class="px-5 col-md-6 d-flex align-items-center wow fadeInUp" data-wow-delay=".2s">
+                    At BYS Graduate School, we offer budding professionals, entrepreneurs and growth driven individuals the opportunity to empower themselves through the acquisition of relevant professional certification programs and 21st Century skill sets all aimed at helping you achieve 3 outstanding results.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Start Services Area -->
-    <section class="services section">
+    <section class="section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -150,42 +149,42 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                     <!-- Start Single Service -->
                     <div class="single-service one">
                         <div class="service-icon">
-                            <i class="lni lni-android"></i>
+                            <!-- <i class="lni lni-android"></i> -->
+                            <img src="/assets/svg/prof.svg" alt="">
                         </div>
                         <h3>Professional Programs</h3>
-                        <p> We offer Professional courses for interested candidate
-                            Learn more</p>
-                        <a href="javascript:void(0)">Learn More <i class="lni lni-arrow-right"></i></a>
+                        <p> We offer Professional courses for interested candidate</p>
+                        <a href="./service.html#professional">Learn More <i class="lni lni-arrow-right"></i></a>
                     </div>
                     <!-- End Single Service -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
                     <!-- Start Single Service -->
-                    <div class="single-service two">
+                    <div class="single-service three">
                         <div class="service-icon">
-                            <i class="lni lni-heart"></i>
+                            <!-- <i class="lni lni-pointer-top"></i> -->
+                            <img src="/assets/svg/ent.svg" alt="">
                         </div>
-                        <h3>Professional Programs</h3>
-                        <p> We offer Professional courses for interested candidate
-                            Learn more</p>
-                        <a href="javascript:void(0)">Learn More <i class="lni lni-arrow-right"></i></a>
+                        <h3>Enterprise Development Programmes</h3>
+                        <p>We offer Entrepreneur Development Programmes (EDP) in both soft skills and hard skills.</p>
+                        <a href="./service.html#enterprise">Learn More <i class="lni lni-arrow-right"></i></a>
                     </div>
                     <!-- End Single Service -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-12  wow fadeInUp" data-wow-delay=".8s">
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                     <!-- Start Single Service -->
-                    <div class="single-service three">
+                    <div class="single-service two">
                         <div class="service-icon">
-                            <i class="lni lni-pointer-top"></i>
+                            <!-- <i class="lni lni-heart"></i> -->
+                            <img src="/assets/svg/dig.svg" alt="">
                         </div>
-                        <h3>Professional Programs</h3>
-                        <p> We offer Professional courses for interested candidate
-                            Learn more</p>
-                        <a href="javascript:void(0)">Learn More <i class="lni lni-arrow-right"></i></a>
+                        <h3>Digital Skills</h3>
+                        <p> We offer Digital Skills trainings for interested candidate</p>
+                        <a href="./service.html#digital">Learn More <i class="lni lni-arrow-right"></i></a>
                     </div>
                     <!-- End Single Service -->
                 </div>
@@ -204,11 +203,9 @@
                         <div class="col-lg-4 col-md-6 col-12">
                             <!-- Single Widget -->
                             <div class="single-footer f-about">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        BYS
-                                    </a>
-                                </div>
+                                <a class="" href="index.html">
+                                    <span class="fs-2 fw-bold primary">BYS</span>
+                                </a>
                                 <p>Making the world a better place through constructing elegant hierarchies.</p>
                                 
 
@@ -224,10 +221,9 @@
                             <div class="single-footer f-link">
                                 <h3>Services</h3>
                                 <ul>
-                                    <li><a href="javascript:void(0)">Marketing</a></li>
-                                    <li><a href="javascript:void(0)">Analytics</a></li>
-                                    <li><a href="javascript:void(0)">Commerce</a></li>
-                                    <li><a href="javascript:void(0)">Insights</a></li>
+                                    <li><a href="./service.html#professional">Professional Programs</a></li>
+                                    <li><a href="./service.html#digital">Digital Skills</a></li>
+                                    <li><a href="./service.html#enterprise">Enterprise Development Programs</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -236,12 +232,19 @@
                             <!-- Single Widget -->
                             <div class="single-footer f-link">
                                 <h3>Contact</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">Pricing</a></li>
-                                    <li><a href="javascript:void(0)">Documentation</a></li>
-                                    <li><a href="javascript:void(0)">Guides</a></li>
-                                    <li><a href="javascript:void(0)">API Status</a></li>
-                                </ul>
+                                <address>
+                                    <ul>
+                                        <li>
+                                            <a href="tel:+2349033398824">08082424162</a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:admin@bysgradschool.com">admin@bysgradschool.com</a>
+                                        </li>
+                                        <li>
+                                            58 Azikoro road, opposite NUJ, Ekeki, Yenagoa, Bayelsa State.
+                                        </li>
+                                    </ul>
+                                </address>
                             </div>
                             <!-- End Single Widget -->
                         </div>
