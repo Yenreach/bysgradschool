@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-   
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -77,11 +77,11 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </div> <!-- navbar collapse -->
-                                <!-- <div class="button">
-                                    <a href="signin.html" class="signin">Sign In</a>
-                                    <a href="signup.html" class="signup">Sign Up</a>
-                                </div> -->
+                                </div>  <!-- navbar collapse -->
+                                        <!-- <div class="button">
+                                            <a href="signin.html" class="signin">Sign In</a>
+                                            <a href="signup.html" class="signup">Sign Up</a>
+                                        </div> -->
                             </nav>
                             <!-- End Navbar -->
                         </div>
@@ -108,7 +108,7 @@
                         <h1>BYS Graduate School</h1>
                         <p style="font-weight: 600;">Is Everything To You</p>
                         <div class="button">
-                            <a href="service.html" class="btn z-100 shadow">Learn More</a>
+                            <a href="#services" class="btn z-100 shadow">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -141,9 +141,24 @@
             </div>
         </div>
     </section>
-
+    <!-- <div class="carousel-container"> -->
+        <div class="main-carouseler">
+            <img class="carousel-ce" src="./assets/images/CIA.png" alt="">
+            <img class="carousel-ce" src="./assets/images/ICEN.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/ICRM.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/ism.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/lead.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/NDU.png" alt="">
+            <img class="carousel-ce" src="./assets/images/CIA.png" alt="">
+            <img class="carousel-ce" src="./assets/images/ICEN.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/ICRM.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/ism.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/lead.jpg" alt="">
+            <img class="carousel-ce" src="./assets/images/NDU.png" alt="">
+        </div>
+    <!-- </div> -->
     <!-- Start Services Area -->
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -252,13 +267,27 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
     <script>
+        var pictureSlider = document.querySelector('.main-carousely');
+        var flkty = new Flickity( pictureSlider, {
+            // options
+            contain: true,
+            autoPlay: 4000,
+            wrapAround: true,
+            freeScroll: true,
+            setGallerySize: true,
+            freeScrollFriction: 0.03,
+            selectedAttraction: 0.05,
+            friction: 0.8
+        });
         //========= testimonial 
         tns({
             container: '.testimonial-slider',
