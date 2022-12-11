@@ -3274,7 +3274,7 @@ footer ol {
   /* padding-bottom: 2rem; */
   /* margin-bottom: 2rem; */
   animation-name: slide;
-  animation-duration: 20s;
+  animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: relative;
@@ -3290,14 +3290,14 @@ footer ol {
 @media only screen and (min-width: 650px) {
   .main-carouseler {
     animation-name: slide2;
-    animation-duration: 20s;
+    animation-duration: 40s;
     /* height: 16rem; */
   }
 }
 @media only screen and (min-width: 1100px) {
   .main-carouseler {
     animation-name: slide3;
-    animation-duration: 20s;
+    animation-duration: 40s;
     /* height: 16rem; */
   }
 }
@@ -3310,15 +3310,15 @@ footer ol {
 
 @keyframes slide {
   from {left: 100%}
-  to {left: -330%}
+  to {left: -960%}
 }
 @keyframes slide2 {
   from {right: -100%}
-  to {right: 150%}
+  to {right: 500%}
 }
 @keyframes slide3 {
   from {right: -100%}
-  to {right: 100%}
+  to {right: 330%}
 }
 
 
