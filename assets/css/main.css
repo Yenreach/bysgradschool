@@ -2005,7 +2005,7 @@ h6 {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item .sub-menu.collapse:not(.show) {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -2167,7 +2167,8 @@ h6 {
   right: calc(50% - 1180px);
   width: 600px;
   height: 600px;
-  background: #3080E3;
+  /* background: #3080E3; */
+  background: #3080e357;
   border-radius: 50%;
   z-index: -1;
 }
