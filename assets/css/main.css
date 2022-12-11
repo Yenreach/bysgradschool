@@ -1103,6 +1103,42 @@ h6 {
   line-height: 26px;
 }
 
+.partners {
+  padding: 30px 0;
+}
+
+.partners::after {
+  content: "";
+  position: absolute;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 30%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.partners::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* right: 0; */
+  bottom: 0;
+  top: 0;
+  width: 30%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  z-index: 1;
+  opacity: 0.95;
+}
+.partners-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #3080E3;
+  text-transform: capitalize;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title {
     padding: 0px 200px;
@@ -3299,7 +3335,7 @@ footer ol {
   border-radius: 10px;
 }
 .row-top {
-  height: 30rem;
+  height: 20rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3309,7 +3345,7 @@ footer ol {
 }
 
 #first-slider {
-      height: 30rem;
+      height: 20rem;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6),
@@ -3324,7 +3360,7 @@ footer ol {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #second-slider {
-  height: 30rem;
+  height: 20rem;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6),
@@ -3339,7 +3375,7 @@ footer ol {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #third-slider {
-  height: 30rem;
+  height: 20rem;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6),
@@ -3354,7 +3390,7 @@ footer ol {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #fourth-slider {
-  height: 30rem;
+  height: 20rem;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6),
@@ -3369,7 +3405,7 @@ footer ol {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #fifth-slider {
-  height: 30rem;
+  height: 20rem;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6),
@@ -3384,7 +3420,7 @@ footer ol {
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #sixth-slider {
-  height: 30rem;
+  height: 20rem;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6),
@@ -3397,4 +3433,28 @@ footer ol {
   animation-name: slider;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .row-top {
+    height: 25rem;
+  }
+  #first-slider {
+    height: 25rem;
+  }
+  #second-slider {
+    height: 25rem;
+  }
+  #third-slider {
+    height: 25rem;
+  }
+  #fourth-slider {
+    height: 25rem;
+  }
+  #fifth-slider {
+    height: 25rem;
+  }
+  #sixth-slider {
+    height: 25rem;
+  }
 }
