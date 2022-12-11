@@ -36,6 +36,13 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 body {
@@ -43,8 +50,8 @@ body {
   font-weight: normal;
   font-style: normal;
   color: #000;
-  overflow-x: hidden;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 p {
@@ -3215,33 +3222,179 @@ footer ol {
   height: 160px; 
   margin-right: 10px;
 } */
+
+
 .carousel-container {
   width: 100%
 }
 .main-carouseler {
+  width: 100%;
   display: flex;
   align-items: stretch;
   gap: 3rem;
   height: 4rem;
   /* background-color: pink; */
-  margin-top: 3rem;
+  margin-top: 1rem;
+  /* padding-bottom: 2rem; */
   /* margin-bottom: 2rem; */
   animation-name: slide;
-  animation-duration: 25s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: relative;
+  /* overflow-x: hidden;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem; */
   /* overflow-x: hidden; */
 }
-/* 
-.carouseler {
-  background-color: blue;
+.image-carousel {
+  height: 12rem;
+}
 
-  position: absolute;
-  top: 50%;left: 50%;
-} */
+@media only screen and (min-width: 650px) {
+  .main-carouseler {
+    animation-name: slide2;
+    animation-duration: 20s;
+    /* height: 16rem; */
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .main-carouseler {
+    animation-name: slide3;
+    animation-duration: 20s;
+    /* height: 16rem; */
+  }
+}
+
+.carousel-ce {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
 
 @keyframes slide {
   from {left: 100%}
-  to {left: -630%}
+  to {left: -330%}
+}
+@keyframes slide2 {
+  from {right: -100%}
+  to {right: 150%}
+}
+@keyframes slide3 {
+  from {right: -100%}
+  to {right: 100%}
+}
+
+
+@keyframes slider {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.swiper {
+  border-radius: 10px;
+}
+.row-top {
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#first-slider {
+      height: 30rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/img1.jpeg');
+    background-repeat: no-repeat;
+      background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#second-slider {
+  height: 30rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/img2.jpeg');
+    background-repeat: no-repeat;
+      background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#third-slider {
+  height: 30rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/img3.jpeg');
+    background-repeat: no-repeat;
+      background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#fourth-slider {
+  height: 30rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/img4.jpeg');
+    background-repeat: no-repeat;
+      background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#fifth-slider {
+  height: 30rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/img5.jpeg');
+    background-repeat: no-repeat;
+      background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#sixth-slider {
+  height: 30rem;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/assets/images/img6.jpeg');
+    background-repeat: no-repeat;
+      background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }

@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
@@ -122,7 +125,25 @@
         </div>
     </section>
     <!-- End Hero Area -->
-
+        <!-- <div class="carousel-container"> -->
+            
+            <section class="section carousel-section">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn mb-0" data-wow-delay=".2s">Our Partners</h3>
+                    </div>
+                    <div class="carousel-container shadow">
+                        <div class="main-carouseler">
+                            <img class="carousel-ce" src="./assets/images/CIA.png" alt="">
+                            <img class="carousel-ce" src="./assets/images/ICEN.jpg" alt="">
+                            <img class="carousel-ce" src="./assets/images/ICRM.jpg" alt="">
+                            <img class="carousel-ce" src="./assets/images/ism.jpg" alt="">
+                            <img class="carousel-ce" src="./assets/images/lead.jpg" alt="">
+                            <img class="carousel-ce" src="./assets/images/NDU.png" alt="">
+                        </div>
+                    </div>
+            </section>
+            <!-- </div> -->
+            
     <!-- Start Services Area -->
     <section class="services section">
         <div class="container">
@@ -141,22 +162,36 @@
             </div>
         </div>
     </section>
-    <!-- <div class="carousel-container"> -->
-        <div class="main-carouseler">
-            <img class="carousel-ce" src="./assets/images/CIA.png" alt="">
-            <img class="carousel-ce" src="./assets/images/ICEN.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/ICRM.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/ism.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/lead.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/NDU.png" alt="">
-            <img class="carousel-ce" src="./assets/images/CIA.png" alt="">
-            <img class="carousel-ce" src="./assets/images/ICEN.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/ICRM.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/ism.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/lead.jpg" alt="">
-            <img class="carousel-ce" src="./assets/images/NDU.png" alt="">
-        </div>
-    <!-- </div> -->
+    <section class="services section">
+        <div class="container">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Photo Galery</h3>
+                    </div>
+                </div>
+                <!-- <div class="main-carouseler image-carousel">
+                    <img class="carousel-ce" src="./assets/images/img1.jpeg" alt="">
+                    <img class="carousel-ce" src="./assets/images/img2.jpeg" alt="">
+                    <img class="carousel-ce" src="./assets/images/img3.jpeg" alt="">
+                    <img class="carousel-ce" src="./assets/images/img4.jpeg" alt="">
+                    <img class="carousel-ce" src="./assets/images/img5.jpeg" alt="">
+                    <img class="carousel-ce" src="./assets/images/img6.jpeg" alt="">
+                </div> -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide row-top" id="first-slider">Slide 1</div>
+                        <div class="swiper-slide row-top" id="second-slider">Slide 2</div>
+                        <div class="swiper-slide row-top" id="third-slider">Slide 3</div>
+                        <div class="swiper-slide row-top" id="fourth-slider">Slide 4</div>
+                        <div class="swiper-slide row-top" id="fifth-slider">Slide 5</div>
+                        <div class="swiper-slide row-top" id="sixth-slider">Slide 6</div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!-- Start Services Area -->
     <section class="section" id="services">
         <div class="container">
@@ -267,7 +302,7 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/tiny-slider.js"></script>
@@ -276,18 +311,16 @@
     <script src="assets/js/main.js"></script>
     
     <script>
-        var pictureSlider = document.querySelector('.main-carousely');
-        var flkty = new Flickity( pictureSlider, {
-            // options
-            contain: true,
-            autoPlay: 4000,
-            wrapAround: true,
-            freeScroll: true,
-            setGallerySize: true,
-            freeScrollFriction: 0.03,
-            selectedAttraction: 0.05,
-            friction: 0.8
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          autoplay: {
+            delay: 4500,
+         },
+         speed: 850,
         });
+    </script>
         //========= testimonial 
         tns({
             container: '.testimonial-slider',
