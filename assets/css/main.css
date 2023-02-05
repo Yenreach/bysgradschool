@@ -3275,7 +3275,7 @@ footer ol {
   /* padding-bottom: 2rem; */
   /* margin-bottom: 2rem; */
   animation-name: slide;
-  animation-duration: 40s;
+  animation-duration: 80s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: relative;
@@ -3291,14 +3291,14 @@ footer ol {
 @media only screen and (min-width: 650px) {
   .main-carouseler {
     animation-name: slide2;
-    animation-duration: 40s;
+    animation-duration: 80s;
     /* height: 16rem; */
   }
 }
 @media only screen and (min-width: 1100px) {
   .main-carouseler {
     animation-name: slide3;
-    animation-duration: 40s;
+    animation-duration: 80s;
     /* height: 16rem; */
   }
 }
